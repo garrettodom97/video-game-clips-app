@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/posts" => "posts#index"
+  get "/posts/:id" => "posts#show"
+  post "/posts" => "posts#create"
+  delete "/posts/:id" => "posts#destroy"
+
+  post "/comments" => "comments#create"
+
+  post "/users" => "users#create"
+  get "/users/:id" => "users#show"
+
+  post "/sessions" => "sessions#create"
 end
