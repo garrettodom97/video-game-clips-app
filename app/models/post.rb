@@ -6,6 +6,6 @@ class Post < ApplicationRecord
   has_many :comments
 
   def created_at
-    attributes["created_at"].strftime("%I:%M %p %m/%d/%Y ")
+    attributes["created_at"].strftime("%-I:%M %p %m/%d/%Y ")
   end
 end
