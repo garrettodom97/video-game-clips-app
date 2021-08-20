@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 
   get "/likes" => "likes#index"
   post "/likes" => "likes#create"
-  delete "/likes" => "likes#destroy"
+  delete "/likes/:id" => "likes#destroy"
 end
