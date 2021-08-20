@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   get "/users/:id" => "users#show"
 
   post "/sessions" => "sessions#create"
+
+  get "/likes" => "likes#index"
+  post "/likes" => "likes#create"
+  delete "/likes" => "likes#destroy"
 end
