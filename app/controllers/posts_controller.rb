@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    response = Cloudinary::Uploader.upload(params[:video], resource_type: :auto)
+    response = Cloudinary::Uploader.upload(params[:video], resource_type: :auto, quality: :auto)
     cloudinary_url = response["secure_url"]
 
     post = Post.new(
