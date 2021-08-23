@@ -6,7 +6,7 @@ class LikesController < ApplicationController
 
   def create
     like = Like.new(
-      user_id: current_user.id,
+      user_id: params[:user_id],
       post_id: params[:post_id],
     )
     if like.save
