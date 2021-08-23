@@ -19,6 +19,6 @@ class LikesController < ApplicationController
   def destroy
     like = Like.find(params[:id])
     like.destroy
-    render json: { message: "Post successfully deleted" }
+    render json: { message: "Like successfully deleted" }
   end
 end
