@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dpvgaicsr
+  api_key: "223816427872371"
+  api_secret: "ZOyLKV3v0jbuO-YUGKAGqdzEbM4"
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dpvgaicsr
+  api_key: "223816427872371"
+  api_secret: "ZOyLKV3v0jbuO-YUGKAGqdzEbM4"
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dpvgaicsr
+  api_key: "223816427872371"
+  api_secret: "ZOyLKV3v0jbuO-YUGKAGqdzEbM4"
+  enhance_image_tag: true
+  static_file_support: false
